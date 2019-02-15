@@ -30,7 +30,7 @@ namespace Task_1
 
                 arr[i] = int.Parse(s[i]);// сохраняю стринги в массив в виде чисел 
 
-                int pr = 0; // создал переменную для проверки чисел на прайм
+                bool isPrime = 0; // создаbл переменную для проверки чисел на прайм
 
                 for (int j = 2; j <= (int)Math.Sqrt(arr[i]); j++)// второй форик
 
@@ -40,7 +40,7 @@ namespace Task_1
 
                     {
 
-                        pr = 1;
+                        isPrime = false;
 
                         break;
 
@@ -50,7 +50,7 @@ namespace Task_1
 
                 }
 
-                if (pr == 0 && arr[i] != 1)// сохраняю числа в вектор 
+                if (isPrime == true && arr[i] != 1)// сохраняю числа в вектор 
 
                 {
 
